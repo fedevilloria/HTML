@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Titulos y Parrafos v2</title>
+</head>
+
+<!--
+    section: Es un contenedor generico que agrupa contenido que esta
+    relacionado. Cuando creamos bloques cuyo contenido es parte de un
+    bloque total usaremos section.
+
+    article: Es un contenedor que representa contenido independiente, es
+    decir, podemos leer ese fragmento en cualquier otro sitio y tendria
+    sentido por si mismo.
+
+    aside: Se utiliza para representar contenido indirectamente relacionado pero que no
+    forma parte del contenido principal.
+
+    Anidamiento:
+        Un section puede contener articles, por ejemplo, si tenemos varios
+        articulos que hablan sobre etiquetas HTML, deben ir dentro de un
+        section, ya que es contenido relacionado entre si, y los atricle
+        serian contenido independiente porque podriamos leer uno sin
+        haber leido el resto y seguiria teniendo sentido.
+        El article es definido como un componente de la pagina de contenido
+        independiente, esto implica que esta etiqueta pueda tener un header
+        y un footer propios.
+
+        Tambien existe el caso en el que un article contenga varias secciones,
+        el articulo independiente podria ser navegadores y este contener dentro
+        secciones como navegadores mas utilizados en 2023.
+-->
+
+<body>
+<!--
+    <header>
+        <h1>Noticias Nacionales</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Noticias Del Dia</h2>
+            <article>
+                <header>
+                <h3>Noticia 1</h3>
+                <p>Lorem</p>
+                </header>
+                <footer>La noticia 1 ocurrio en Argentina</footer>
+            </article>
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Lorem</p>
+            </article>
+            <article>
+                <h3>Noticia 3</h3>
+                <p>Lorem</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>18-12-2023</footer>
+-->
+
+    <article>
+        <h2>Navegadores mas utilizados en 2023</h2>
+        <section>
+            <header>
+                <h3>Chrome</h3>
+            </header>
+
+            <p>LOREM</p>
+
+            <footer>Creado por Fede</footer>
+        </section>
+
+        <aside>Visita esta pagina: xD</aside>
+
+        <section>
+            <h3>Firefox</h3>
+            <p>LOREM</p>
+        </section>
+    </article>
+</body>
+</html>
