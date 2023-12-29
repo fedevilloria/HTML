@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos de Línea</title>
+</head>
+<body>
+    <h1>Elementos de Línea</h1>
+    <!--
+        em = Emphasis
+        strong = Mas enfasis
+        small = Menos enfasis que el texto normal
+        br = Forzar un salto de linea
+        wbr = Salto de linea si hiciera falta
+        time = Se usa para representar un contenido de fecha/hora
+        i = Italic
+        b = Bold
+        u = Underline
+        sup = Superindice
+        sub = Subindice
+    -->
+
+    <p><em>El dinero</em> es importante pero la salud es lo mas importante.</p>
+    <!--Esto sirve para darle enfasis a palabras
+        El navegador lo interpretara como mas importante que el resto
+        Los valores serian 0 para el resto de la oracion y lo que este encerrado
+        en el "em" tendra valor de 1.
+    -->
+
+    <p><em>El dinero</em> es importante pero <strong>la salud</strong> es lo mas importante.</p>
+    <!--Esto sirve para darle aun mas enfasis
+        El navegador interpreta que es mas importante que "em".
+        Por lo que esto tendra un valor de 2.
+    -->
+
+    <p><small>Saludos</small></p>
+    <!--Con esto le indico al navegador que tendra menos
+        importancia que el resto.
+        Si el texto vale 0, con "small" vale -1.
+    -->
+
+    <p>Hola como <br>estas?</p>
+    <!--Con esto indicamos un salto de linea forzado al
+        navegador.
+    -->
+
+    <p>http://localhost:63342/<wbr>HTML/<wbr>line-level_content.html?_ijt=<wbr>dgc9dd7v69fvh7to3nkfpujpd6&_ij_reload=<wbr>RELOAD_ON_SAVE</p>
+    <!--Lo que hace es forzar un salto de linea al navegador donde yo elija.
+        En este caso que es una URL quiero que haga el salto cuando dicha direccion
+        no entre en el navegador.
+
+        El guion medio actua como wbr indirectamente.
+    -->
+
+    <time>20/12/2023 23:33</time>
+    <!--Lo que hace es que el navegador interpreta esta informacion como tiempo.
+        Se puede utilizar para blogs, por ejemplo.
+        No tiene porque estar completo siempre, se puede poner solo la hora o solo la fecha.
+    -->
+
+    <p>
+        <i>Italic</i>
+        <b>Bold</b>
+        <u>Underline</u>
+    </p>
+    <!--Estas etiquetas sirven para estetica.
+
+        El unico uso que tiene la etiqueta "i" es para los iconos.
+    -->
+
+    <p>
+        4 elevado al cuadrado se representa asi: 4<sup>2</sup>
+    </p>
+
+    <p>
+        Agua oxigenada tiene la formula H<sub>2</sub>O<sub>2</sub>
+    </p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlaces</title>
+</head>
+<body>
+    <!-- 
+        Enlaces: Conocidos tambien por links popularmente. Su objetivo es conectar una pagina web con otra pagina web, con un recurso tanto interno como externo, o con otro sitio web.
+
+        Tienen el atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que queremos obtener.
+
+        Tambien tiene el atributo target, que configura como queremos visualizar el recurso o sitio que solicitamos.
+    -->
+
+
+    <!-- 
+        Rutas absolutas: 
+            Tienen un protocolo, HTTP o HTTPS y son unicas en la red.
+            
+            Se suelen utilizar para rutas externas.
+
+        Rutas relativas: 
+            Pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto.
+        
+            No usan protocolo.
+        
+            Si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+        
+            Si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta) de la que queramos salir.
+    -->
+
+    <!-- 
+        El archivo denominado "index.html" es aquel archivo al que por defecto la web buscara. Es decir, si yo dejo un archivo con ese nombre, ese sera el "principal".
+    -->
+
+    <!-- 
+        Atributos de los enlaces:
+            target: Define donde se abrira el recurso solicitado. Por norma general siempre que usemos rutas absolutas ponemos como valor "_blank" o el valor por defecto "_self" (es como no poner nada).
+
+            download: Atributo booleano, sirve para descargar el recurso solicitado.
+            Importante: el recurso debe estar en el mismo servidor.
+    -->
+
+     <h1>Home</h1>
+     
+     <a href="contact.html">Ir a contacto</a>
+
+     <a href="/assets/images/gato.jpg" download>Descargar imagen de gato</a>
+        <!-- Aca lo que hago es buscar la ruta donde tengo guardada la imagen que quiero que el usuario descargue
+        
+            No se puede pasar el enlace de la foto debido a que tiene que estar en el mismo servidor.
+        -->
+     
+    <a href="https://www.google.com/?hl=es">Ir a Google</a>  <!--Ruta ABSOLUTA-->
+
+    <a href="https://www.google.com/?hl=es" target="_blank"> Ir a Google</a>  <!-- Lo que hace target con el valor de _blank es abre el recurso en una pestana aparte, sin "perder" nuestra web. -->
+
+
+</body>
+</html>
