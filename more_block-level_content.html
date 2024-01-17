@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Otras etiquetas de bloque</title>
+</head>
+<body>
+    <!--
+        address -> Se utiliza para aportar informacion de contacto para el article mas cercano o para todo el body.
+
+        blockquote -> Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo cite para poner un enlace al documento original o fuente.
+        
+        pre -> Se utiliza para tener codigo preformateado que necesita ser representado igual que se escribio.
+
+        div -> Se usa como division del documento, semanticamente no significa nada, es un contenedor generico que se usa generalmente para dar estilos a traves de CSS o para usar algo denominado "delegacion de eventos" en JavaScript.
+
+        hr -> horizontal rule: Se utiliza para decirle al navegador que vamos a cambiar de tema.
+    -->
+
+    <address>
+        Tony Stark <br>
+        Malibu 10880 <br>
+        90265 <br>
+        California
+    </address>
+
+    <blockquote cite="https://vandal.elespanol.com/reportaje/random-las-10-mejores-frases-de-iron-mantony-stark">
+        <p>Nosotros creamos a nuestros propios demonios</p>
+    </blockquote>
+
+    <pre> <!--Se utiliza para ver contenido exactamente como lo estamos viendo, ejemplo, algun algoritmo. En el caso de representar un codigo se utiliza con la etiqueta code.-->
+                Hola,
+        que tal
+    </pre>
+
+    <div> <!--Esta etiqueta nos sirve para dar estilos por separado a cada cosa dentro de la misma. El contenido dentro del div tiene que estar relacionado.-->
+        <h2>Nombre</h2>
+        <p>E-mail</p>
+        <p>Descripcion</p>
+    </div>
+
+    <hr> <!--Sirve para cambiar de tema. NO SIRVE PARA CREAR LINEAS.-->
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de Input</title>
+</head>
+<body>
+    <!-- 
+        input type:
+            button -> Se comporta igual que un boton <button>.
+            submit -> Se utiliza para enviar el formulario.
+            
+
+        Fechas:
+            date -> Se utiliza para introducir una fecha.
+            datetime -> OBSOLETO.
+            datetime-local -> Fecha y hora, no funciona en FireFox.
+            time -> Se utiliza para introducir una hora.
+                TIP:
+                    Se recomienda usar datatime-local y time para seleccionar fecha y hora
+            month -> Se utiliza para introducir un mes.
+            week -> Se utiliza para introducir el numero de semana del año.
+        
+
+            search -> Se utiliza para las barras de busqueda.
+            tel -> Se utiliza para introducir numeros telefonicos.
+            email -> Se utiliza para introducir un E-Mail.
+            password -> Se utiliza para contraseñas.
+            url -> Se utiliza para introducir URL's.
+            
+
+            color -> Se utiliza para especificar un color.
+            
+            hidden -> Campo oculto, puede contener valor pero no se mostrara.
+            
+            number -> Se utiliza para valores numericos.
+            
+            range -> Se utiliza para establecer un rango.
+            
+            reset -> Se utiliza para resetear el formulario.
+            
+            text -> Valor por defecto.
+            
+     -->
+
+     <form>
+        <input>
+        <input type="button" value="Enviar (button)"> <!--No sirve para enviar formulario ya que no reinicia como la etiqueta button. Si queremos que envie a traves de una etiqueta input, debemos usar el atributo submit.-->
+        <input type="submit" value="Enviar (submit)">
+        <button>Enviar (boton)</button>
+     </form>
+
+     <form>
+        <input type="date">
+        <input type="datetime-local"> <!--Lo mismo que el anterior pero se puede elegir hora y minutos. NO FUNCIONA EN FIREFOX.-->
+
+        <!-- En caso de necesitar la fecha y la hora se haria lo siguiente: -->
+        <input type="date">
+        <input type="time">
+
+        <input type="month">
+        <input type="week">
+
+        <hr> <!--No se utiliza para crear lineas, solo lo hago a modo de que se diferencien las cosas.-->
+        <!-- 
+            Se diferencian muchos los campos dentro del telefono.
+            
+            Para revisar los resultados en el telefono vamos a: cmd, tipeamos ipconfig, revisamos el ipv4, lo ponemos en el navegador con el :5500 (puerto proporcionado por vsCode) y luego la ruta del archivo.
+        -->
+        <div>
+            <label> search
+                <input type="search">
+            </label>
+        </div>
+        <div>
+            <label> telefono
+                <input type="tel">
+            </label>
+        </div>  
+        <div>
+            <label> email
+                <input type="email">
+            </label>
+        </div>  
+        <div>
+            <label> password
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label> url
+                <input type="url">
+            </label>
+        </div>
+
+        <hr> <!--No se utiliza para crear lineas, solo lo hago a modo de que se diferencien las cosas.-->
+
+        <input type="color">
+        <input type="number">
+        <input type="range" step="5" min="0" max="20"> <!--Lo que hace es crear una barra como la del sonido. Step significa de cuanto en cuanto saltaria dicha barra. Luego tenemos el maximo y el minimo.-->
+        <input type="reset"> <!--Sirve para resetear el formulario.-->
+        <input type="text">
+
+     </form>
+
+</body>
+</html>
