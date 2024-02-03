@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs de Seleccion</title>
+</head>
+<body>
+    <!-- 
+        radio -> Permite seleccionar una unica opcion de una lista de opciones relacionadas.
+
+        checkbox -> Permite seleccionar varias opciones de una lista de opciones relacionadas.
+
+        select -> Crea una lista de opciones donde podemos seleccionar una o varias opciones.
+
+        Cada opcion ira dentro de una etiqueta <option> </option>
+
+        Si tenemos muchas opciones podemos ordenarlas por categorias a traves de la etiqueta <optgroup> con el atributo label para nombrar la categoria
+     -->
+
+     <h1>Elementos seleccionables</h1>
+     <form>
+        <h2>Genero</h2>
+        <label>
+            Masculino
+            <input type="radio" name="gender" value="masculino" checked> <!--Le agrego el atributo name para decirle al navegador que todos pertenecen a la misma categoria por lo cual solo me debera seleccionar uno.-->
+            <!-- Checked es el que deja marcado por defecto, en este caso no tiene sentido pero es bueno saberlo. -->
+            <!-- Al agregarle el valor, una vez que se envie el formulario, en el servidor aparecera la categoria(name), en este caso "gender", y su valor(value), en este caso "masculino". -->
+        </label>
+        <label>
+            Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+
+        <h2>Lenguajes que conoces</h2>
+        <label>
+            <input type="checkbox" name="lenguajes" value="html">
+            HTML
+        </label> <br>
+        <label>
+            <input type="checkbox" name="lenguajes" value="css">
+            CSS
+        </label>
+        <label> <br>
+            <input type="checkbox" name="lenguajes" value="javascript">
+            JavaScript
+        </label>
+        
+        <br>
+
+        <select name="languages" multiple> <!--Con multiple si mantenemos el control apretado nos dejaria elegir mas de una opcion.-->
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+
+        <br>
+
+        <select name="mascotas">
+            <optgroup label="4 patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+            </optgroup>
+                <optgroup label="Aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="Otras">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarantula</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+            <option value="perro"></option> <!--En la web lo que aparece es el valor y luego la descripcion, para que no aparezcan ambas borraremos la descripcion. Salvo que se necesite tener alguna.-->
+            <option value="gato"></option>
+            <option value="hamster"></option>
+            <option value="conejo"></option>
+            <option value="loro"></option>
+            <option value="canario"></option>
+            <option value="serpiente"></option>
+            <option value="tarantula"></option>
+        </datalist>
+
+     </form>
+
+</body>
+</html>
