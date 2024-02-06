@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenido Embebido</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        video{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        El contenido embebido es todo aquello que se agrega extra a la web. Pueden ser imagenes, gif, archivos webp, etc.
+     -->
+
+     <!-- <h1>Contenido Embebido</h1>
+     <img src="/embedded_content/assets/images/monkey.webp" alt="Mono"> -->
+
+     <!-- 
+        DPR (Device Pixel Ratio)
+            Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para pintar contenido.
+
+        DPR = Pixeles reales / Pixeles disponibles.
+      -->
+
+    <!-- <img src="/embedded_content/assets/images/perro.jpeg" alt="perro" width="300"> -->
+
+    <!-- <img srcset="/embedded_content/assets/images/perro.webp, /embedded_content/assets/images/perro300.webp 2x" alt=""> -->
+
+    <!-- <picture>
+        <source srcset="
+        /embedded_content/assets/images/perro.webp, /embedded_content/assets/images/perro300.webp 2x">
+        <img src="/embedded_content/assets/images/perro.jpeg" alt="perro">
+
+        Esto solo funciona si tiene el jpg que lo pueda respaldar por si llega a suceder algo con el archivo webp.
+
+        <source srcset="/embedded_content/assets/images/pepepog.webp, /embedded_content/assets/images/pepepog.png" media="(max-width:1200px)">
+        <img src="/embedded_content/assets/images/pepepog.png" alt="pepepog">
+
+        Este caso se utiliza para que por ejemplo si en la pantalla entra la foto de 1200px se carga esa y si no se carga la imagen para el celular. SI NO SE AGREGA EL ATRIBUTO IMG NO CARGA NADA.
+    </picture> -->
+
+
+    <!-- <audio src="/embedded_content/assets/audio/y2mate.com - La Increíble narración más enloquecida del golazo de Messi al Bayern Munich2015.mp3" controls autoplay muted></audio> -->
+
+    <!-- <video src="/embedded_content/assets/video/gol-elvis-1_FMI1CfiK.mp4" controls muted loop 
+        poster="/embedded_content/assets/images/monkey.webp">
+    </video> -->
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/DLmh1iNJbKM?si=lD3KHE3WxiLXoCyT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        
+        Basicamente tiene que traer YouTube, Spotify, ect. para insertarlo en la pagina, por lo que sera mas lenta la pagina y no es recomendable abusar de esto. -->
+
+    
+    <!-- 
+        Figure se utiliza para romper el flujo del contenido con un contenido relacionado pero que no es necesario para la interpretacion del articulo.
+        
+        Figcaption sirve como pie de imagen. Sirve tambien para tablas, fragmentos de codigos, etc.
+    -->
+    <h2>Perros</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, ex inventore quo alias voluptatem, perferendis reprehenderit hic, ad quas illo accusantium enim libero cupiditate animi tempore facilis magnam quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sit quis? Ipsum, hic odio! Hic sapiente odio officiis beatae itaque nulla vero? Dignissimos voluptate placeat aliquam ea minus quod officia!</p>
+    <figure>
+        <img src="/embedded_content/assets/images/perro.webp" alt="Perro">
+        <figcaption>Perro con disfraz.</figcaption>
+    </figure>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, ex inventore quo alias voluptatem, perferendis reprehenderit hic, ad quas illo accusantium enim libero cupiditate animi tempore facilis magnam quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sit quis? Ipsum, hic odio! Hic sapiente odio officiis beatae itaque nulla vero? Dignissimos voluptate placeat aliquam ea minus quod officia!</p>
+
+</body>
+</html>
